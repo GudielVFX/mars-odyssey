@@ -1,0 +1,92 @@
+/* reset = remover los estilos que vienen por defecto con el navegador*/
+
+/* "*" el asterisco es igual a todo */ 
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Helvetica, sans-serif, Arial;
+}
+header {
+    /* border: solid;*/ 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+img {
+    border-radius: 50%;
+}
+
+ul{
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+a { 
+    text-decoration: none;
+    color:#000;
+}
+
+.hero{
+    border: solid;
+    background: url(./assets/img_header.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    padding: 25px;
+    color: #fff;
+} 
+h1 {
+    font-size: 40px;
+    text-shadow: 1px 1px 2px #000;
+}
+p {       
+    font-size: 18px;
+    text-shadow: 1px 1px 2px #000;
+} 
+
+.reserva-viaje {
+    margin-top: 20px;
+    display: block;
+    /* border: solid 4px #fff; */
+    background-color: aquamarine;
+    /* width: 185px;*/
+    /*padding: 10px 15px;
+    border-radius: 8px;
+    
+    font-weight: bold; */
+
+    text-align: center;
+    box-shadow: 0px 10px 14px -7px #276873;
+	background:linear-gradient(to bottom, #599bb3 5%, #408c99 100%);
+	background-color:#599bb3;
+	border-radius:8px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:20px;
+	font-weight:bold;
+	padding:13px 32px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #3d768a;
+}
+
+.reserva-viaje:hover {
+    background:linear-gradient(to bottom, #408c99 5%, #599bb3 100%);
+	background-color:#408c99;
+}
+
+.reserva-viaje:active {
+    position:relative;
+	top:1px;
+}

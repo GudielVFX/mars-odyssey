@@ -36,8 +36,6 @@ a {
 .hero{
     border: solid;
     background: url(./assets/img_header.jpeg);
-
-    );
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

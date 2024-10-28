@@ -8,33 +8,65 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <!--Header es el menú de navegación-->
+    <!---Header de navegación-->
     <header>
-      <img src="./assets/marslogo.png" alt="Marte tours logo" 
-      width="120  " />
-    <!--<h1>Marte Tours</h1>-->
+      <img class="logo_border_circle" src="./assets/marslogo.png" alt="Marte tours logo" width="50" />
+<!--###################################################-->
+
+      <!--<h1> Marte Tours </h1>-->
       <nav>
-        <ul>
-          <li><a href="#">Inicio</a></li>
-          <li><a href="#">Sobre Marte</a></li>
-          <li><a href="#">Paquetes</a></li>
-          <li><a href="#">Testimonios</a></li>
-          <li><a href="#">Contacto</a></li>
+        <ul class="nav_buttons">
+            <li><a href="#">Inicio</a></li>
+            <li><a href="./sobremarte.html">Sobre Marte</a></li>
+            <li><a href="#">Paquetes</a></li>
+            <li><a href="#">Testimonio</a></li>
         </ul>
       </nav>
     </header>
-    <!--HEADER PARA EL CONTENIDO PRINCIPAL DEL SITE-->
+<!--###################################################-->
 
     <main>
-      <!--ETIQUETA PARA CREAR UN CONTENEDOR -->
-      <div class="hero">
-        <div>
-        <h1>Marte: Un nuevo mundo por descubrir</h1>
-        <p>Explora un planeta misterioso con paisajes increíbles, cráteres antiguos y una historia por descubrir.<br> 
-          Marte te espera con un sinfín de aventuras.</p>
-        <a class="reserva-viaje" href="">Reserva tu viaje ya!</a>
-      </div>
-    </div> 
+        <div class="hero">
+            <div>
+                <h1>Marte: Un nuevo mundo por descubrir</h1>
+                <p class="p_text_hero">Explora un planeta misterioso con paisajes increíbles, cráteres antiguos y una historia por descubrir.<br> 
+                    Marte te espera con un sinfín de aventuras.</p>
+                <a class="boton_reserva_viaje">Reserva tu viaje ya!</a>
+            </div> 
+        </div>
+<!--###################################################-->
+
+    <section>
+        <br>
+        <br>
+
+        <section class="info_contenido">
+
+            <article>
+                <h2 class="h2_text_contenido" >Exploración en profundidad</h2>
+                <p class="p_text_contenido" >Descubre los paisajes más emblemáticos de Marte con guías expertos.</p>
+                <img src="https://d3i6fh83elv35t.cloudfront.net/newshour/app/uploads/2015/09/MRO-HIRISE-Mars-Hale-Crater-Slope-Seeping-Water-PIA19359-full-1024x640.jpg" alt="Paisaje de Marte" width="500">"
+            </article>
+
+            <article>
+                <h2 class="h2_text_contenido">Viajes en rover</h2>
+                <p class="p_text_contenido" >Disfruta de paseos en nuestros rovers para una experiencia marciana auténtica.</p>
+                <img src="https://i2-prod.dailystar.co.uk/incoming/article33449187.ece/ALTERNATES/s1200/1_Valles-Marineris-Mars-illustration.jpg" alt="Viaje en rover" width="500">
+            </article>
+
+            <article>
+                <h2 class="h2_text_contenido">Cielos nocturnos impresionantes</h2>
+                <p class="p_text_contenido" >Observa las estrellas y constelaciones como nunca antes lo habías hecho.</p>
+                <img src="https://static01.nyt.com/images/2018/07/27/science/27MARS/27MARS-videoSixteenByNineJumbo1600.jpg" alt="Cielo nocturno en Marte" width="500" >
+            </article>
+
+        </section>
+    </section>
     </main>
+
   </body>
-</html> 
+<!-- Footer -->
+        <footer>
+          <p>&copy; 2024 Exploraciones a Marte. Todos los derechos reservados.</p>
+      </footer>
+</html>

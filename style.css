@@ -1,70 +1,65 @@
-/* reset = remover los estilos que vienen por defecto con el navegador*/
-
-/* "*" el asterisco es igual a todo */ 
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
 body {
-    font-family: Helvetica, sans-serif, Arial;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+
 header {
-    /* border: solid;*/ 
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
 }
-img {
-    border-radius: 50%;
+
+.logo_border_circle {
+    border-radius: 50px;
 }
 
-ul{
+img {
+    border-radius: 10px;
+    border-color: black;
+}
+
+ul {
     display: flex;
     list-style: none;
-    gap: 30px;
+    gap: 25px;
+    text-align: center;
 }
-
-a { 
-    text-decoration: none;
-    color:#000;
-}
-
-.hero{
-    border: solid;
-    background: url(./assets/img_header.jpeg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 500px;
+.imagen_marte1{
     display: flex;
-    align-items: center;
-    padding: 25px;
-    color: #fff;
-} 
+}
+
+
+.h2_text {
+    font-size: 25px;
+    
+}
+/* ####################### */
 h1 {
     font-size: 40px;
     text-shadow: 1px 1px 2px #000;
 }
-p {       
+.p_text_hero {       
     font-size: 18px;
     text-shadow: 1px 1px 2px #000;
 } 
 
-.reserva-viaje {
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #222;
+    color: #fff;
+  }
+
+.boton_reserva_viaje {
     margin-top: 20px;
     display: block;
-    /* border: solid 4px #fff; */
     background-color: aquamarine;
-    /* width: 185px;*/
-    /*padding: 10px 15px;
-    border-radius: 8px;
-    
-    font-weight: bold; */
-
     text-align: center;
     box-shadow: 0px 10px 14px -7px #276873;
 	background:linear-gradient(to bottom, #599bb3 5%, #408c99 100%);
@@ -79,14 +74,67 @@ p {
 	padding:13px 32px;
 	text-decoration:none;
 	text-shadow:0px 1px 0px #3d768a;
-}
+  }
 
-.reserva-viaje:hover {
+.boton_reserva_viaje:hover {
     background:linear-gradient(to bottom, #408c99 5%, #599bb3 100%);
 	background-color:#408c99;
 }
 
-.reserva-viaje:active {
+.boton_reserva_viaje:active {
     position:relative;
 	top:1px;
 }
+
+/* Responsividad */
+  @media (max-width: 768px) {
+    .card {
+        width: 100%;
+    }
+}
+
+/* Estilos de la cabecera */
+header {
+    background-color: #545775;
+    padding: 15px;
+    text-align: center;
+}
+
+/* Estilos de los botones de navegación */
+.nav_buttons {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.nav_buttons li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background 0.3s;
+    }
+
+    a { 
+        text-decoration: none;
+        color:#000;
+    }
+    
+    .hero{
+        border: solid;
+        background: url(https://imagenes.eltiempo.com/files/image_1200_600/uploads/2020/08/03/5f288647c26e9.jpeg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 500px;
+        display: flex;
+        align-items: center;
+        padding: 25px;
+        color: #fff;
+    } 
+
+    .info_contenido{
+        padding: 25px;
+    }

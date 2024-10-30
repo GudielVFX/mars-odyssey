@@ -4,69 +4,160 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tu escape a lo extraordinario</title>
-    <!--ETIQUETA PARA ENLAZAR EL ARCHIVO CSS-->
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <!---Header de navegación-->
-    <header>
-      <img class="logo_border_circle" src="./assets/marslogo.png" alt="Marte tours logo" width="50" />
-<!--###################################################-->
-
-      <!--<h1> Marte Tours </h1>-->
-      <nav>
-        <ul class="nav_buttons">
-            <li><a href="./index.html">Inicio</a></li>
-            <li><a href="./sobremarte.html">Sobre Marte</a></li>
-            <li><a href="#">Paquetes</a></li>
-            <li><a href="#">Testimonio</a></li>
-        </ul>
-      </nav>
-    </header>
-<!--###################################################-->
-
-    <main>
-        <div class="hero">
-            <div>
-                <h1>Marte: Un nuevo mundo por descubrir</h1>
-                <p class="p_text_hero">Explora un planeta misterioso con paisajes increíbles, cráteres antiguos y una historia por descubrir.<br> 
-                    Marte te espera con un sinfín de aventuras.</p>
-                <a class="boton_reserva_viaje">Reserva tu viaje ya!</a>
-            </div> 
+    <nav>
+      <div class="nav-container">
+        <div class="logo-container">
+          <div class="logo">
+            <span><img class="logo_shape" src="./assets/marslogo.png" width="70"/></span>
+          </div>
+          <span class="brand-name">Mars</span>
         </div>
-<!--###################################################-->
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <label for="nav-toggle" class="nav-toggle-label">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+        <ul class="nav-menu">
+          <li><a href="#" class="nav-link inicio">Inicio</a></li>
+          <li><a href="#" class="nav-link productos">Marte</a></li>
+          <li><a href="#" class="nav-link servicios">Packs</a></li>
+          <li><a href="#" class="nav-link nosotros">Reseña</a></li>
+          <li><a href="#" class="nav-link contacto">Contacto</a></li>
+        </ul>
+      </div>
+    </nav>
 
-    <section>
-        <br>
-        <br>
+    <div class="hero-section">
+      <img src="./assets/img_header.jpeg" alt="Portada" class="hero-image" />
+      <h1>Marte: Un nuevo mundo por descubrir</h1>
+      <p class="p_text_hero">Explora un planeta misterioso con paisajes increíbles, cráteres antiguos y una historia por descubrir.<br>Marte te espera con un sinfín de aventuras.</p>
+      <button class="hero-button">¡Vive tu odisea!</button>
+    </div>
 
-        <section class="info_contenido">
+    <!-- Rest of your HTML content remains the same -->
 
-            <article>
-                <h2 class="h2_text_contenido" >Exploración en profundidad</h2>
-                <p class="p_text_contenido" >Descubre los paisajes más emblemáticos de Marte con guías expertos.</p>
-                <img src="https://d3i6fh83elv35t.cloudfront.net/newshour/app/uploads/2015/09/MRO-HIRISE-Mars-Hale-Crater-Slope-Seeping-Water-PIA19359-full-1024x640.jpg" alt="Paisaje de Marte" width="500">"
-            </article>
-
-            <article>
-                <h2 class="h2_text_contenido">Viajes en rover</h2>
-                <p class="p_text_contenido" >Disfruta de paseos en nuestros rovers para una experiencia marciana auténtica.</p>
-                <img src="https://i2-prod.dailystar.co.uk/incoming/article33449187.ece/ALTERNATES/s1200/1_Valles-Marineris-Mars-illustration.jpg" alt="Viaje en rover" width="500">
-            </article>
-
-            <article>
-                <h2 class="h2_text_contenido">Cielos nocturnos impresionantes</h2>
-                <p class="p_text_contenido" >Observa las estrellas y constelaciones como nunca antes lo habías hecho.</p>
-                <img src="https://static01.nyt.com/images/2018/07/27/science/27MARS/27MARS-videoSixteenByNineJumbo1600.jpg" alt="Cielo nocturno en Marte" width="500" >
-            </article>
-
-        </section>
-    </section>
-    </main>
+    <div class="products-grid">
+        <!-- Card 1 -->
+        <div class="product-card">
+          <img
+            src="https://media.npr.org/assets/img/2018/12/21/perspective_view_of_korolev_crater_wide-1486aabbcc456639317b2725091bcef64fd7fddb.jpg?s=1400&c=100&f=jpeg.jpg"
+            alt="Producto 1"
+            class="product-image"
+          />
+          <div class="product-content">
+            <h3 class="product-title">El Cráter de la Luna Roja</h3>
+            <p class="product-description">
+                Un cráter de impacto que refleja la luz roja del sol marciano, creando un efecto de luna roja. 
+            </p>
+          </div>
+          <div class="product-footer">
+            <div class="stars">★★★★☆</div>
+            <div class="price">$99.99</div>
+            <button class="buy-button">Comprar</button>
+          </div>
+        </div>
+  
+        <!-- Card 2 -->
+        <div class="product-card">
+          <img
+            src="https://www.sciencealert.com/images/2022-03/danielson-crater-september-2019.jpg"
+            alt="Producto 2"
+            class="product-image"
+          />
+          <div class="product-content">
+            <h3 class="product-title">Las Montañas de Ónix</h3>
+            <p class="product-description">
+                Una cadena montañosa formada por roca volcánica negra, 
+                con picos que alcanzan los 10 kilómetros de altura.
+            </p>
+          </div>
+          <div class="product-footer">
+            <div class="stars">★★★★★</div>
+            <div class="price">$149.99</div>
+            <button class="buy-button">Comprar</button>
+          </div>
+        </div>
+  
+        <!-- Card 3 -->
+        <div class="product-card">
+          <img
+            src="https://images.stockcake.com/public/7/5/5/7558eb30-9ab4-46d4-9cef-0958faa2a7af_large/mars-desert-landscape-stockcake.jpg"
+            alt="Producto 3"
+            class="product-image"
+          />
+          <div class="product-content">
+            <h3 class="product-title">Valle de los Atardeceres Rojos</h3>
+            <p class="product-description">
+                Contempla los atardeceres más impresionantes del sistema solar en este valle, 
+                donde la atmósfera marciana tiñe el cielo de tonos rojizos y anaranjados.
+            </p>
+          </div>
+          <div class="product-footer">
+            <div class="stars">★★★☆☆</div>
+            <div class="price">$79.99</div>
+            <button class="buy-button">Comprar</button>
+          </div>
+        </div>
+  
+        <!-- Card 4 -->
+        <div class="product-card">
+          <img
+            src="https://static.uahirise.org/images/wallpaper/1920/ESP_014353_1685.jpg"
+            alt="Producto 4"
+            class="product-image"
+          />
+          <div class="product-content">
+            <h3 class="product-title">Las Dunas Doradas</h3>
+            <p class="product-description">
+              Un extenso desierto de dunas de arena dorada, con una belleza salvaje y desolada.
+            </p>
+          </div>
+          <div class="product-footer">
+            <div class="stars">★★★★☆</div>
+            <div class="price">$129.99</div>
+            <button class="buy-button">Comprar</button>
+          </div>
+        </div>
+      </div>
+  
+      <footer>
+        <div class="footer-container">
+          <div class="footer-section">
+            <h3>Sobre Nosotros</h3>
+            <p>
+              <strong>Mars Tours</strong> es la puerta de entrada a la 
+              aventura definitiva: viajes turísticos a Marte. 
+              Somos pioneros en la exploración espacial, ofreciendo 
+              experiencias únicas e inolvidables a aquellos que buscan lo insólito.
+            </p>
+          </div>
+          <div class="footer-section">
+            <h3>Enlaces Rápidos</h3>
+            <ul>
+              <li><a href="./index.html">Inicio</a></li>
+              <li><a href="#">Productos</a></li>
+              <li><a href="#">Servicios</a></li>
+              <li><a href="#">Nosotros</a></li>
+              <li><a href="#">Contacto</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Contacto</h3>
+            <p>Email: tours@mars.com</p>
+            <p>Teléfono: (123) 456-7890</p>
+            <p>Dirección: Calle Principal 123, Ciudad</p>
+          </div>
+        </div><div class="hero-section">
+         
+  
+        <div class="footer-bottom">
+          <p>&copy; 2024 <strong>Mars Tours.</strong>Todos los derechos reservados.</p>
+        </div>
+  
 
   </body>
-<!-- Footer -->
-        <footer>
-          <p>&copy; 2024 Exploraciones a Marte. Todos los derechos reservados.</p>
-      </footer>
 </html>

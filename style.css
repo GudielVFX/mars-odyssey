@@ -1,140 +1,312 @@
+/* Variables CSS para la paleta de colores */
+:root {
+  --mars-dark: #CB2D44;
+  --mars-medium: #F04150;
+  --mars-light: #FB8B5D;
+}
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
 body {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  padding-top: 4.5rem;
 }
 
-header {
+/* Navigation styles */
+nav {
+  background-color: var(--mars-dark);
+  padding: 1rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.nav-container {
+  max-width: 72rem;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 0.75rem;
+}
+
+.logo_shape {
+  border-radius: 50px;
+  align-items: center;
+}
+
+.brand-name {
+  color: white;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+/* Hamburger menu styles using CSS only */
+.nav-toggle {
+  display: none;
+}
+
+.nav-toggle-label {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.nav-toggle-label span {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  transition: all 0.3s ease;
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: all 0.3s;
+}
+
+.nav-link:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: var(--mars-light);
+}
+
+/* Hero section styles */
+.hero-section {
+  position: relative;
+  height: 400px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  color: white;
+}
+
+.hero-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.hero-section h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  z-index: 2;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.p_text_hero {
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  z-index: 2;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  padding: 0 1rem;
+}
+
+.hero-button {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 1rem 2rem;
+  background-color: var(--mars-medium);
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+  z-index: 2;
+}
+
+.hero-button:hover {
+  background-color: var(--mars-light);
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .nav-toggle-label {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-}
+  }
 
-.logo_border_circle {
-    border-radius: 50px;
-}
-
-img {
-    border-radius: 10px;
-    border-color: black;
-}
-
-ul {
-    display: flex;
-    list-style: none;
-    gap: 25px;
-    text-align: center;
-}
-.imagen_marte1{
-    display: flex;
-}
-
-
-.h2_text {
-    font-size: 25px;
-    
-}
-/* ####################### */
-h1 {
-    font-size: 40px;
-    text-shadow: 1px 1px 2px #000;
-}
-.p_text_hero {       
-    font-size: 18px;
-    text-shadow: 1px 1px 2px #000;
-} 
-
-/* Footer */
-footer {
-    text-align: center;
+  .nav-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: var(--mars-dark);
+    flex-direction: column;
     padding: 1rem;
-    background-color: #222;
-    color: #fff;
+    gap: 1rem;
   }
 
-.boton_reserva_viaje {
-    margin-top: 20px;
-    display: block;
-    background-color: aquamarine;
-    text-align: center;
-    box-shadow: 0px 10px 14px -7px #276873;
-	background:linear-gradient(to bottom, #599bb3 5%, #408c99 100%);
-	background-color:#599bb3;
-	border-radius:8px;
-	display:inline-block;
-	cursor:pointer;
-	color:#ffffff;
-	font-family:Arial;
-	font-size:20px;
-	font-weight:bold;
-	padding:13px 32px;
-	text-decoration:none;
-	text-shadow:0px 1px 0px #3d768a;
-  }
-
-.boton_reserva_viaje:hover {
-    background:linear-gradient(to bottom, #408c99 5%, #599bb3 100%);
-	background-color:#408c99;
-}
-
-.boton_reserva_viaje:active {
-    position:relative;
-	top:1px;
-}
-
-/* Responsividad */
-  @media (max-width: 768px) {
-    .card {
-        width: 100%;
-    }
-}
-
-/* Estilos de la cabecera */
-header {
-    background-color: #545775;
-    padding: 15px;
-    text-align: center;
-}
-
-/* Estilos de los botones de navegación */
-.nav_buttons {
-    list-style: none;
+  .nav-toggle:checked ~ .nav-menu {
     display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
+  }
+
+  .nav-link {
+    display: block;
+    text-align: center;
+  }
+
+  .hero-section h1 {
+    font-size: 2rem;
+    padding: 0 1rem;
+  }
+
+  .p_text_hero {
+    font-size: 1rem;
+  }
 }
-.nav_buttons li a {
-    text-decoration: none;
-    color: #ffffff;
-    font-weight: bold;
-    padding: 10px 20px;
-    border-radius: 5px;
-    transition: background 0.3s;
-    }
 
-    a { 
-        text-decoration: none;
-        color:#000;
-    }
-    
-    .hero{
-        border: solid;
-        background: url(https://imagenes.eltiempo.com/files/image_1200_600/uploads/2020/08/03/5f288647c26e9.jpeg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        height: 500px;
-        display: flex;
-        align-items: center;
-        padding: 25px;
-        color: #fff;
-    } 
+/* Product grid styles */
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
 
-    .info_contenido{
-        padding: 25px;
-    }
+.product-card {
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+.product-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.product-content {
+  padding: 1.25rem;
+}
+
+.product-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: var(--mars-dark);
+  margin-bottom: 0.5rem;
+}
+
+.product-description {
+  color: #6b7280;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+  min-height: 4rem;
+}
+
+.product-footer {
+  padding: 1rem;
+  background-color: #f9fafb;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid #e5e7eb;
+}
+
+/* Footer styles */
+footer {
+  background-color: var(--mars-dark);
+  color: white;
+  padding: 3rem 0;
+  margin-top: 4rem;
+}
+
+.footer-container {
+  max-width: 72rem;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.footer-section h3 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  color: #f3f4f6;
+}
+
+.footer-section p,
+.footer-section a {
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 1.6;
+}
+
+.footer-section ul {
+  list-style: none;
+}
+
+.footer-section ul li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-section a {
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-section a:hover {
+  color: var(--mars-light);
+}
+
+.footer-bottom {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  text-align: center;
+  color: rgba(255, 255, 255, 0.7);
+}

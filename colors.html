@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        background-color: #f5f5f5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        margin: 0;
+        padding: 20px;
+        font-family: Arial, sans-serif;
+      }
+
+      .main-card {
+        background: white;
+        border-radius: 16px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+        padding: 32px;
+        width: 100%;
+        max-width: 600px;
+      }
+
+      .card-title {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 24px;
+        color: #333;
+      }
+
+      .color-container {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+      }
+
+      .color-card {
+        padding: 20px;
+        border-radius: 8px;
+        color: white;
+        transition: transform 0.2s ease;
+      }
+
+      .color-card:hover {
+        transform: translateY(-2px);
+      }
+
+      .color-code {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+      }
+
+      .code-row {
+        display: flex;
+        gap: 10px;
+        width: 100%;
+      }
+
+      .code-item {
+        background: rgba(255, 255, 255, 0.1);
+        padding: 8px 12px;
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 8px;
+        backdrop-filter: blur(5px);
+        flex: 1;
+        min-width: 0; /* Previene que los items se desborden */
+      }
+
+      .code-item-hsl {
+        text-align: center;
+        justify-content: center;
+      }
+
+      .copy-btn {
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        padding: 4px;
+        transition: transform 0.2s ease;
+        flex-shrink: 0; /* Previene que el botón se encoja */
+      }
+
+      .copy-btn:hover {
+        transform: scale(1.1);
+      }
+
+      .title {
+        font-size: 14px;
+        font-weight: bold;
+        margin-bottom: 5px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
+
+      @media (max-width: 480px) {
+        .code-row {
+          flex-direction: column;
+        }
+
+        .code-item {
+          width: auto;
+        }
+
+        .main-card {
+          padding: 16px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main-card">
+      <div class="card-title">Paleta de Colores</div>
+      <div class="color-container">
+        <div class="color-card" style="background-color: #fb8b5d">
+          <div class="title">COLOR 1</div>
+          <div class="color-code">
+            <div class="code-row">
+              <div class="code-item">
+                HEX: #FB8B5D
+                <button class="copy-btn" onclick="copyToClipboard('#FB8B5D')">
+                  📋
+                </button>
+              </div>
+              <div class="code-item">
+                RGB: 251, 139, 93
+                <button
+                  class="copy-btn"
+                  onclick="copyToClipboard('rgb(251, 139, 93)')"
+                >
+                  📋
+                </button>
+              </div>
+            </div>
+            <div class="code-row">
+              <div class="code-item code-item-hsl">
+                HSL: 17, 95%, 67%
+                <button
+                  class="copy-btn"
+                  onclick="copyToClipboard('hsl(17, 95%, 67%)')"
+                >
+                  📋
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="color-card" style="background-color: #f04150">
+          <div class="title">COLOR 2</div>
+          <div class="color-code">
+            <div class="code-row">
+              <div class="code-item">
+                HEX: #F04150
+                <button class="copy-btn" onclick="copyToClipboard('#F04150')">
+                  📋
+                </button>
+              </div>
+              <div class="code-item">
+                RGB: 240, 65, 80
+                <button
+                  class="copy-btn"
+                  onclick="copyToClipboard('rgb(240, 65, 80)')"
+                >
+                  📋
+                </button>
+              </div>
+            </div>
+            <div class="code-row">
+              <div class="code-item code-item-hsl">
+                HSL: 355, 85%, 60%
+                <button
+                  class="copy-btn"
+                  onclick="copyToClipboard('hsl(355, 85%, 60%)')"
+                >
+                  📋
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="color-card" style="background-color: #cb2d44">
+          <div class="title">COLOR 3</div>
+          <div class="color-code">
+            <div class="code-row">
+              <div class="code-item">
+                HEX: #CB2D44
+                <button class="copy-btn" onclick="copyToClipboard('#CB2D44')">
+                  📋
+                </button>
+              </div>
+              <div class="code-item">
+                RGB: 203, 45, 68
+                <button
+                  class="copy-btn"
+                  onclick="copyToClipboard('rgb(203, 45, 68)')"
+                >
+                  📋
+                </button>
+              </div>
+            </div>
+            <div class="code-row">
+              <div class="code-item code-item-hsl">
+                HSL: 351, 64%, 49%
+                <button
+                  class="copy-btn"
+                  onclick="copyToClipboard('hsl(351, 64%, 49%)')"
+                >
+                  📋
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="color-card" style="background-color: #ffca80">
+          <div class="title">COLOR 4</div>
+          <div class="color-code">
+            <div class="code-row">
+              <div class="code-item" style="color: #000">
+                HEX: #FFCA80
+                <button class="copy-btn" onclick="copyToClipboard('#FFCA80')">
+                  📋
+                </button>
+              </div>
+              <div class="code-item" style="color: #000">
+                RGB: 255, 202, 128
+                <button
+                  class="copy-btn"
+                  onclick="copyToClipboard('rgb(255, 202, 128)')"
+                >
+                  📋
+                </button>
+              </div>
+            </div>
+            <div class="code-row">
+              <div class="code-item code-item-hsl" style="color: #000">
+                HSL: 35, 100%, 75%
+                <button
+                  class="copy-btn"
+                  onclick="copyToClipboard('hsl(35, 100%, 75%)')"
+                >
+                  📋
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function copyToClipboard(text) {
+        navigator.clipboard
+          .writeText(text)
+          .then(() => {
+            alert("Código copiado: " + text);
+          })
+          .catch((err) => {
+            console.error("Error al copiar:", err);
+          });
+      }
+    </script>
+  </body>
+</html>

@@ -1,5 +1,11 @@
 /* Import font from google*/
-@import url('https://fonts.googleapis.com/css2?family=Ranga:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Timmana&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Tienne:wght@400;700;900&display=swap');
+
+
 /* Import font from google*/
 
 /* Variables CSS para la paleta de colores */
@@ -63,12 +69,11 @@ nav {
 /* Estil de fuente para el texto al lado del logo*/
 .brand-name {
   color: white;
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   font-weight: bold;
-  font-family: "Ranga", serif;
-  font-weight: 700;
+  font-family: "Fugaz One", sans-serif;
+  font-weight: 400;
   font-style: normal;
-  font-size: 2.4rem;
 }
 
 /* Hamburger menu styles using CSS only */
@@ -115,7 +120,8 @@ nav {
 /* #####################################################*/
 /* Aquí empieza la sección HERO */
 
-/* Estilo del contendedor hero como regla general de contenedor*/
+  /* Estilo del contendedor hero como regla general de contenedor*/
+/*================================================================*/
 .hero-section {
   position: relative;
   height: 400px;
@@ -128,7 +134,8 @@ nav {
   color: white;
 }
 
-/* Aquí se edita cómo se comporta la imagen en la sección hero*/
+    /* Aquí se edita cómo se comporta la imagen en la sección hero*/
+/*==================================================================*/
 .hero-image {
   position: absolute;
   top: 0;
@@ -138,31 +145,35 @@ nav {
   object-fit: cover;
   z-index: 1;
 }
-/* Se encarga de dar estilo al texto h1 dentro de hero */ 
+  /* Se encarga de dar estilo al texto h1 dentro de hero */ 
+/*===========================================================*/
 .hero-section h1 {
   margin-bottom: 1rem;
   z-index: 2;
-  text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.5);
-  font-family: "Ranga", serif;
-  font-weight: 700;
+  text-shadow: 1.5px 1.5px 2px rgba(0, 0, 0, 0.5);
+  font-family: "Timmana", sans-serif;
+  font-weight: 400;
   font-style: normal;
-  font-size: 4rem;
+  font-size: 3rem;
   
   
 }
 
+                 /* <p> texto de hero */
+/*=====================================================*/
 .p_text_hero {
-  font-size: 1.6rem;
+  font-size: 1rem;
   max-width: 800px;
   margin: 0 auto;
   z-index: 2;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
   padding: 0 1rem;
-  font-family: "Ranga", serif;
+  font-family: "Tienne", serif;
   font-weight: 400;
   font-style: normal;
 }
-
+                /*Texto Botón Hero */
+/*=====================================================*/
 .hero-button {
   position: absolute;
   bottom: 2rem;
@@ -177,6 +188,9 @@ nav {
   font-weight: bold;
   transition: background-color 0.3s;
   z-index: 2;
+  
+  
+  
 }
 
 .hero-button:hover {

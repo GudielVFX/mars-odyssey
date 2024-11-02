@@ -87,12 +87,12 @@
 
 1. Define una paleta de 3 a 5 colores.
 
-<img src="https://img.notionusercontent.com/s3/prod-files-secure%2Febfb0089-c563-4b29-ae68-f61069c1c8a5%2Fd60e17de-32f9-44be-8fe0-68da6d835194%2FScreenshot_From_2024-10-30_10-46-37.png/size/w=2000?exp=1730660909&sig=zdgfdxV-CYXUvKNNql59HMRTi9irj8Hv_yAmtDieMlQ">
+<img src="https://img.notionusercontent.com/s3/prod-files-secure%2Febfb0089-c563-4b29-ae68-f61069c1c8a5%2Fd60e17de-32f9-44be-8fe0-68da6d835194%2FScreenshot_From_2024-10-30_10-46-37.png/size/w=2000?exp=1730660909&sig=zdgfdxV-CYXUvKNNql59HMRTi9irj8Hv_yAmtDieMlQ" width="500">
 
 1. Agrega etiquetas a tu wireframe con los colores elegidos y en dónde irán.
 
     <img src="https://elegant-effect-ccc.notion.site/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Febfb0089-c563-4b29-ae68-f61069c1c8a5%2F40a405ca-019a-4c21-ade6-4e6da8754a83%2Fmars-tours-wireframe.jpg?table=block&id=473059d1-fc2f-42bf-b8f2-4181c5600667&spaceId=ebfb0089-c563-4b29-ae68-f61069c1c8a5&width=2000&userId=&cache=v2" height="600">
 
-# Mi Paleta de Colores
+  <p align="center">
 
-<iframe src="./colors.html" style="width: 100%; height: 800px; border: none;"></iframe>
+<img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/footers/gray0_ctp_on_line.svg?sanitize=true" />

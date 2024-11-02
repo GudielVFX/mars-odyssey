@@ -1,19 +1,23 @@
 /* Import font from google*/
+/*----------------------------------------------------------------------------------------------*/
 @import url('https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Timmana&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Tienne:wght@400;700;900&display=swap');
-
-
+/*----------------------------------------------------------------------------------------------*/
 /* Import font from google*/
 
-/* Variables CSS para la paleta de colores */
+
+
+           /* Variables CSS para la paleta de colores */
+/*================================================================*/
 :root {
   --mars-dark: #CB2D44;
   --mars-medium: #F04150;
   --mars-light: #FB8B5D;
 }
+
 
 * {
   margin: 0;
@@ -25,7 +29,9 @@ body {
   padding-top: 4.5rem;
 }
 
-/* Navigation styles */
+                        /* Navigation styles */
+/*================================================================*/
+
 nav {
   background-color: var(--mars-dark);
   padding: 1rem;
@@ -66,7 +72,8 @@ nav {
   align-items: center;
 }
 
-/* Estil de fuente para el texto al lado del logo*/
+          /* Estil de fuente para el texto al lado del logo*/
+/*================================================================*/
 .brand-name {
   color: white;
   font-size: 2.2rem;
@@ -76,7 +83,8 @@ nav {
   font-style: normal;
 }
 
-/* Hamburger menu styles using CSS only */
+             /* Hamburger menu styles using CSS only */
+/*================================================================*/
 .nav-toggle {
   display: none;
 }
@@ -117,8 +125,10 @@ nav {
   background-color: var(--mars-light);
 }
 
-/* #####################################################*/
-/* Aquí empieza la sección HERO */
+
+             /* Aquí empieza la sección HERO */
+/*================================================================*/
+
 
   /* Estilo del contendedor hero como regla general de contenedor*/
 /*================================================================*/
@@ -172,7 +182,7 @@ nav {
   font-weight: 400;
   font-style: normal;
 }
-                /*Texto Botón Hero */
+                  /*Texto Botón Hero */
 /*=====================================================*/
 .hero-button {
   position: absolute;
@@ -192,21 +202,16 @@ nav {
   
   
 }
-
+               /* Botón Hero */ 
+/*============================================*/
 .hero-button:hover {
   background-color: var(--mars-light);
 }
 
-/* 
-.h1_hero_text {
-  font-family: "Ranga", cursive;
-  font-weight: 400;
-  font-style: normal;
-}
-*/
 
+         /* Responsive styles */
+/*======================================*/
 
-/* Responsive styles */
 @media (max-width: 768px) {
   .nav-toggle-label {
     display: flex;
@@ -243,7 +248,10 @@ nav {
   }
 }
 
-/* Product grid styles */
+
+                      /* Product grid styles */
+/*================================================================*/
+
 .products-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -302,10 +310,7 @@ nav {
 }
 
 .buy-button {
-  .
-    /*position:right;*/
-    /*bottom: 2rem; */
-    /*left: 50%;*/
+   
     transform: translateX(-50%);
     padding: .5rem 1rem;
     background-color: var(--mars-medium);
@@ -323,7 +328,9 @@ nav {
 }
 
 
-/* Footer styles */
+                       /* Footer styles */
+/*================================================================*/
+
 footer {
   background-color: var(--mars-dark);
   color: white;

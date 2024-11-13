@@ -209,6 +209,56 @@
           <p>&copy; 2024 <strong>Mars Tours.</strong>Todos los derechos reservados.</p>
         </div>
   
+<script>
+  
+        // vamos a solicitar un color al usuario
+        const colorDeFondo = prompt("Hello, please write a colour you'd like to see")
+        //printing the output
+        console.log(colorDeFondo)
+        //para modificar el color de fondo
+        document.body.style.backgroundColor = colorDeFondo; 
 
+
+        // ------->  PESO EN LA LUNA   <----------
+        // (peso/9.81) * 1.622
+        // siempre convertir la data ingresante de prompt a number si se requiere
+        //parseInt = para convetir integers
+        //parseFLoat = para convertir floats
+        const peso = prompt("Ingresa tu peso en la tierra" );
+
+        const resultado =(Number(peso)/9.81)* 1.622;
+        // acortando el valor numérico a dos decimales
+        const resultadoDosDecimales = Number(resultado.toFixed(1));
+        //Alert nos mostrará un pop up de alerta con el mensaje escrito 
+        // prompt muestra un popup con un textbox para ingresar datos
+        alert("Tu peso en la luna: " + resultadoDosDecimales +" Kg.");
+
+
+        //------------->    Mensaje de Bienvenida    <---------------
+        //------------->===============================<-------------
+        const nombreViajero = prompt("Bienvenido vaquer@ espacial, cuál es tu nombre?");
+        const usuario = "Es bueno tenerte abordo " +nombreViajero + " ,esperamos que tengas tu traje espacial listo. ¡La Starship espera por ti!"
+        console.log(usuario);
+        alert(usuario);
+
+        //------------------->    Viaje a Marte    <-----------------
+        //------------->===============================<-------------
+        // Preguntar nombre y mostrar bienvenida
+        /*
+        const nombre = prompt("Bienvenido vaquer@ espacial, ¿cuál es tu nombre?") || "Viajero";
+        alert(`¡Bienvenido ${nombre}! La Starship espera por ti.`);
+        */
+
+        // Calcular tiempo total del viaje
+        const diasAMarte = 150;  // Tiempo base del viaje
+        const orbitas = Number(prompt(`El viaje base dura ${diasAMarte} días. ¿Cuántas órbitas extra quieres dar?`)) || 0;
+        const diasExtra = (orbitas * 20) / 24;  // 20 horas por órbita convertidas a días
+        const tiempoTotal = diasAMarte + diasExtra;
+
+        // Mostrar resultado
+        alert(`Tiempo total del viaje: ${tiempoTotal.toFixed(1)} días. Los días extra añadidos fueron: ` + diasExtra.toFixed(1));
+      
+
+</script>
   </body>
 </html>
